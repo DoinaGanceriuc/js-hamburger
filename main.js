@@ -17,9 +17,11 @@ const elementHamburgerMenu = document.querySelector(".hamburger-menu");
 const elementCloseMenu = document.querySelector(".close > .fas.fa-times");
 
 elementHamburgerIcon.addEventListener("click", function () {
-  elementHamburgerMenu.style.display = "block";
+  /* elementHamburgerMenu.style.display = "block"; */
+  elementHamburgerMenu.className += " active";
 });
 
 elementCloseMenu.addEventListener("click", function () {
-  elementHamburgerMenu.style.display = "none";
+  /*  elementHamburgerMenu.style.display = "none"; */
+  elementHamburgerMenu.classList.remove("active");
 });
