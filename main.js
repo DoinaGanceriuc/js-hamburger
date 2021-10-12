@@ -11,10 +11,15 @@
 const elementHamburgerIcon = document.querySelector("a > .fas.fa-bars");
 /* console.log(elementHamburgerIcon); */
 
-const elementHeaderRight = document.querySelector(".header-right ul");
-/* console.log(elementHeaderRight); */
+const elementHamburgerMenu = document.querySelector(".hamburger-menu");
+/* console.log(elementHamburgerMenu); */
 
-const showMenu = elementHamburgerIcon.addEventListener("click", function () {
-  elementHeaderRight.style.display = "block";
-  /* elementHamburgerIcon.style.display = "none"; */
+const elementCloseMenu = document.querySelector(".close > .fas.fa-times");
+
+elementHamburgerIcon.addEventListener("click", function () {
+  elementHamburgerMenu.style.display = "block";
+});
+
+elementCloseMenu.addEventListener("click", function () {
+  elementHamburgerMenu.style.display = "none";
 });
